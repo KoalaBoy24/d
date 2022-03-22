@@ -8,13 +8,13 @@ client = discord.Client()
 @client.event
 async def on_ready():
     # DO STUFF....
-    general_channel = client.get_channel(954406658602332200)
+    general_channel = client.get_channel(954399483943329872)
     await general_channel.send('Hi')
 
 
 @client.event
 async def on_disconnect():
-    general_channel = client.get_channel(954406658602332200)
+    general_channel = client.get_channel(954399483943329872)
     await general_channel.send('Goodbye')
 
 
@@ -23,7 +23,7 @@ async def on_message(message):
 
     if message.content == '!version':
 
-        general_channel = client.get_channel(954406658602332200)
+        general_channel = client.get_channel(954399483943329872)
 
         myEmbed = discord.Embed(
             title="Current Version", description="The bot is in Version 1.0", color=0x00ff00)
